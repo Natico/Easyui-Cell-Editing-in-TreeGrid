@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Editable TreeGrid - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="../../extentions/treegrid-cellediting.js"></script>
+</head>
+<body>
+	<h2>Cell Editable TreeGrid</h2>
+	<p>click on one cell.</p>
+
+	<table id="tg" class="easyui-treegrid" title="Editable TreeGrid" style="width:700px;height:250px"
+			data-options="
+				iconCls: 'icon-ok',
+				rownumbers: true,
+				animate: true,
+				collapsible: true,
+				fitColumns: true,
+				url: 'treegrid_data2.json',
+				method: 'get',
+				idField: 'id',
+				treeField: 'name',
+				showFooter: true
+			">
+		<thead>
+			<tr>
+				<th data-options="field:'name',width:180,editor:'text'">Task Name</th>
+				<th data-options="field:'persons',width:60,align:'right',editor:'numberbox'">Persons</th>
+				<th data-options="field:'begin',width:80,editor:'datebox'">Begin Date</th>
+				<th data-options="field:'end',width:80,editor:'datebox'">End Date</th>
+				<th data-options="field:'progress',width:120,formatter:formatProgress,editor:'numberbox'">Progress</th>
+			</tr>
+		</thead>
+	</table>
+	<script type="text/javascript">
+		//::TODO
+	
+	</script>
+
+</body>
+</html>
